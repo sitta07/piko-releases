@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piko — คุณพิมพ์ น้องพิมพ์</title>
+  <meta name="description" content="You type, it types. Piko is a tiny pixel friend riding a cloud by the side of your screen, for macOS and Windows. Nothing to set up, never in the way, never peeks. Free." />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="brand/icon.png" />
+  <meta property="og:title" content="Piko — You type, it types." />
+  <meta property="og:description" content="A tiny pixel friend riding a cloud by the side of your screen. Free for macOS and Windows." />
+  <meta property="og:image" content="icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wipe" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="#top" aria-label="Piko">
+        <img class="logo-icon" src="brand/mark.png" alt=""><span class="logo-text">Piko</span>
+      </a>
+      <nav>
+        <a href="#promises" data-t="nav1">คำสัญญา</a>
+        <a href="#abilities" data-t="nav2">ทำอะไรได้</a>
+        <a href="#family" data-t="nav3">ตัวละคร</a>
+        <a href="#download" data-t="nav4">ดาวน์โหลด</a>
+      </nav>
+      <div class="bar-actions">
+        <a class="px-btn small support" href="#support"><img class="ico" src="icons/gift.png" alt=""> <span data-t="support">สนับสนุน</span></a>
+        <select class="px-btn small ghost lang-pick" id="lang" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: a little desktop with Piko living on it -->
+    <section class="hero wrap">
+      <div class="stickers" id="stickers" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="kicker" data-t="kicker">macOS · Windows · ฟรี</p>
+        <h1 data-t="h1"><span class="nb">คุณพิมพ์</span><br /><em class="nb">น้องพิมพ์</em></h1>
+        <p class="lead" data-t="lead">เพื่อนพิกเซลตัวจิ๋ว นั่งเมฆลอยอยู่ข้างจอ พิมพ์ไปพร้อมคุณ หลับตอนคุณลุกไป</p>
+        <div class="cta">
+          <a class="px-btn big primary" id="dl-main" href="#download"><span id="dl-os-icon"></span> <span data-t="dl">ดาวน์โหลดฟรี</span></a>
+        </div>
+        <ul class="facts">
+          <li><b>0</b> <span data-t="fact1">อย่างที่ต้องตั้งค่า</span></li>
+          <li><b>15</b> <span data-t="fact2">ตัวละคร</span></li>
+          <li><b>0</b> <span data-t="fact3">ข้อมูลที่ส่งออกจากเครื่อง</span></li>
+        </ul>
+        <!-- the main supporters, right where everyone lands -->
+        <div class="backers">
+          <p class="backers-label"><img class="ico" src="icons/heart.png" alt="" /> <span data-t="backers">ผู้สนับสนุนหลัก</span></p>
+          <div class="backers-list" id="backers-list">
+            <a class="backer free" href="#support" id="backer-free">
+              <span class="backer-pet sprite-el" data-char="piko" data-pose="wave" data-size="1"></span>
+              <span><b data-t="backer-free">ที่นั่งนี้ว่างอยู่</b><small data-t="backer-free-s">สนับสนุนแล้วชื่อกับลิงก์ของคุณขึ้นตรงนี้</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="monitor reveal" aria-label="A preview of Piko on a desktop">
+        <div class="screen" id="screen">
+          <div class="win w1"><i></i><i></i><i></i><p class="typed" id="typed"></p><span></span><span></span></div>
+          <div class="win w2"><i></i><i></i><i></i><span></span><span></span></div>
+          <div class="bubble" id="hero-bubble"></div>
+          <div class="ride" id="hero-ride" title="ลูบหัว / ลากไปวางได้"><div class="ride-cloud"></div><div class="sprite-el hero-pet" id="hero-pet" data-char="piko" data-pose="idle" data-size="3"></div></div>
+          <div class="hearts" id="hearts"></div>
+          <div class="taskbar"><i></i><i></i><i></i><i></i><b id="clock">9:41</b></div>
+        </div>
+        <div class="stand"></div>
+        <p class="hint" data-t="try"><img class="ico" src="icons/paw.png" alt=""> ลองพิมพ์อะไรก็ได้ดูสิ แล้วปล่อยไว้เฉย ๆ สักพัก</p>
+      </div>
+    </section>
+
+    <div class="parade" id="parade" aria-hidden="true"><div class="parade-track" id="parade-track"></div></div>
+
+    <!-- Three promises: the minimal idea, as something to repeat -->
+    <section id="promises" class="wrap block">
+      <h2 class="reveal" data-t="f-h">สามคำสัญญา</h2>
+      <p class="sub reveal" data-t="f-sub">Piko ทำน้อย แต่ทำให้ดี</p>
+      <div class="grid3">
+        <article class="card reveal">
+          <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="wave" data-size="3"></span></div>
+          <h3 data-t="c1">ไม่ต้องตั้งค่า</h3>
+          <p data-t="c1p">เปิดแล้วน้องก็ลอยอยู่ข้างจอเลย เตือนดื่มน้ำ พิมพ์ตาม หลับตอนคุณไม่อยู่ ทำงานเองหมดตั้งแต่แรก</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="sit" data-size="3"></span></div>
+          <h3 data-t="c2">ไม่เกะกะ</h3>
+          <p data-t="c2p">อยู่ที่เดิม ไม่วิ่งไปมาให้เสียสมาธิ เมาส์ผ่านแล้วน้องจางลง คลิกทะลุไปได้ เกมหรือวิดีโอเต็มจอ น้องหลบให้ได้</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="lie" data-size="3"></span></div>
+          <h3 data-t="c3">ไม่แอบดู</h3>
+          <p data-t="c3p">น้องรู้แค่ว่าคุณกดแป้นกี่ครั้ง ไม่รู้ว่ากดตัวไหน ไม่มีบัญชี ไม่มีอะไรส่งออกจากเครื่อง ใช้ในที่ทำงานได้สบายใจ</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- What it does -->
+    <section id="abilities" class="band lavender">
+      <div class="wrap block">
+        <h2 class="reveal" data-t="a-h">น้องทำอะไรได้บ้าง</h2>
+        <p class="sub reveal" data-t="a-sub">ไม่มีอะไรให้เปิด ทุกอย่างมีให้ตั้งแต่แรก</p>
+        <div class="grid3">
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="type" data-size="3"></span></div>
+            <h3 data-t="p1h">พิมพ์ไปด้วยกัน</h3>
+            <p data-t="p1">คุณพิมพ์เมื่อไร น้องกางแล็ปท็อปพิมพ์ด้วย หยุดพิมพ์แป๊บเดียว น้องก็พักตาม</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="lie" data-size="3"></span></div>
+            <h3 data-t="p2h">หลับรอคุณ</h3>
+            <p data-t="p2">ลุกไปไม่กี่นาที น้องนอนหลับบนเมฆ กลับมาเมื่อไร น้องบิดขี้เกียจตื่นมาดีใจ</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="drink" data-size="3"></span></div>
+            <h3 data-t="p3h">เตือนดื่มน้ำ</h3>
+            <p data-t="p3">เตือนในบับเบิล ไม่มีอะไรเด้งมาบัง ดื่มแล้วแตะน้องทีเดียว น้องนับให้ว่าวันนี้กี่แก้ว</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="type" data-size="3"></span></div>
+            <h3><img class="ico" src="icons/tomato.png" alt=""> Pomodoro</h3>
+            <p data-t="p4">ตั้งใจทำงาน 25 นาที น้องนั่งพิมพ์งานเป็นเพื่อน ครบเวลาก็ชวนพัก ปิดแอปแล้วเปิดใหม่ก็ยังนับต่อ</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="happy" data-size="3"></span></div>
+            <h3 data-t="p5h">ลูบหัว ให้ขนม</h3>
+            <p data-t="p5">ลูบหัวแล้วน้องดีใจ ให้ขนมแล้วน้องเคี้ยวตุ้ย ๆ ไม่มีหลอดหิว ไม่ป้อนก็ไม่เป็นไร</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-art"><span class="sprite-el" data-char="piko" data-pose="dance" data-size="3"></span></div>
+            <h3 data-t="p6h">เต้นตามเพลง</h3>
+            <p data-t="p6">เปิดเพลงเมื่อไร น้องเต้นบนเมฆ ดูหนังเต็มจอ น้องหยิบป๊อปคอร์นมานั่งดูด้วย</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The family + dress-up -->
+    <section id="family" class="wrap block">
+      <h2 class="reveal" data-t="fam-h">ครอบครัว Piko</h2>
+      <p class="sub reveal" data-t="fam-sub">15 ตัว วาดเองทุกพิกเซล แต่งตัวได้ เปลี่ยนสีได้ ตั้งชื่อเองได้ — ของแต่งทุกชิ้นใช้ได้ฟรีตั้งแต่แรก</p>
+      <div class="dressup reveal">
+        <div class="dress-stage">
+          <canvas id="dress-canvas" width="48" height="40" aria-label="Piko dressed up"></canvas>
+        </div>
+        <div class="dress-options">
+          <p class="opt-label" data-t="acc">ของแต่ง</p>
+          <div class="chips" id="acc-chips"></div>
+          <p class="opt-label" data-t="fur">สีขน</p>
+          <div class="chips" id="fur-chips"></div>
+        </div>
+      </div>
+      <div class="family-grid" id="family-grid"></div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="wrap block">
+      <h2 class="reveal" data-t="d-h">ดาวน์โหลด</h2>
+      <p class="sub reveal" data-t="d-sub">ฟรี ไม่มีบัญชี ไม่มีโฆษณา</p>
+      <div class="tabs reveal" role="tablist">
+        <button class="tab" role="tab" data-os="mac">macOS</button>
+        <button class="tab" role="tab" data-os="win">Windows</button>
+      </div>
+      <div class="install reveal">
+        <div class="steps" data-os="mac">
+          <a class="px-btn big primary" id="dl-mac" href="https://github.com/sitta07/piko-releases/releases/latest"><span data-t="dl-mac">ดาวน์โหลดสำหรับ macOS</span></a>
+          <ol class="how">
+            <li data-t="m1">เปิดไฟล์ .dmg</li>
+            <li data-t="m2">ลาก Piko ไปใส่ Applications</li>
+            <li data-t="m3">เปิดไม่ได้? Settings › Privacy › Open Anyway</li>
+          </ol>
+        </div>
+        <div class="steps" data-os="win" hidden>
+          <a class="px-btn big primary" id="dl-win" href="https://github.com/sitta07/piko-releases/releases/latest"><span data-t="dl-win">ดาวน์โหลดสำหรับ Windows</span></a>
+          <ol class="how">
+            <li data-t="w1">เปิดไฟล์ -setup.exe</li>
+            <li data-t="w2">ติดตั้งได้เลย ไม่ต้องใช้ admin</li>
+            <li data-t="w3">เจอ SmartScreen? More info › Run anyway</li>
+          </ol>
+        </div>
+        <p class="version" id="version" data-t="version">ยังไม่มีเวอร์ชันเปิดตัว — เร็ว ๆ นี้!</p>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section id="support" class="band peach">
+      <div class="wrap block support-wrap">
+        <div class="sign reveal">
+          <div class="sign-board" data-t="sign">ช่วยเลี้ยงขนม<br />Piko หน่อย~</div>
+          <span class="sprite-el" data-char="piko" data-pose="happy" data-size="4"></span>
+        </div>
+        <div class="support-copy reveal">
+          <h2 data-t="s-h">Piko ฟรีตลอดไป <img class="ico" src="icons/gift.png" alt=""></h2>
+          <p class="sub" data-t="s-p">ไม่มีโฆษณา ไม่มี subscription ไม่เก็บข้อมูล ถ้าน้องทำให้วันทำงานของคุณน่ารักขึ้น ช่วยสนับสนุนได้ทุกช่องทาง</p>
+          <div class="goal">
+            <div class="goal-head"><b data-t="goal">เป้าแรก: Apple Developer $99</b><span id="goal-num">$0 / $99</span></div>
+            <div class="goal-bar"><i id="goal-fill"></i></div>
+            <p class="goal-why" data-t="goal-why">เพื่อให้ติดตั้งบน Mac แล้วไม่มีคำเตือนอีกเลย</p>
+          </div>
+          <div class="pay">
+            <a class="pay-card" href="#support" id="promptpay">
+              <span class="pay-icon"><img class="ico big" src="icons/coin.png" alt=""></span><b>PromptPay</b><small data-t="pp">สแกนจ่ายได้ทุกแอปธนาคาร (เร็ว ๆ นี้)</small>
+            </a>
+            <a class="pay-card" href="https://ko-fi.com/sitta07">
+              <span class="pay-icon"><img class="ico big" src="icons/coffee.png" alt=""></span><b>Ko-fi</b><small data-t="kofi">ไม่ต้องมีบัญชี จ่ายครั้งเดียวก็ได้</small>
+            </a>
+            <a class="pay-card" href="https://github.com/sponsors/sitta07">
+              <span class="pay-icon"><img class="ico big" src="icons/heart.png" alt=""></span><b>GitHub Sponsors</b><small data-t="ghs">รายเดือน ไม่หักค่าธรรมเนียม</small>
+            </a>
+          </div>
+          <p class="where" data-t="where">เงินทั้งหมดใช้กับ: ค่าลงทะเบียน Apple/Windows ให้ติดตั้งง่าย · ตัวละครและของแต่งใหม่ · ค่าโดเมน</p>
+        </div>
+      </div>
+      <div class="wrap wall reveal">
+        <h3><img class="ico" src="icons/heart.png" alt=""> <span data-t="wall-h">กำแพงคนใจดี</span></h3>
+        <p class="sub" data-t="wall-p">ทุกคนที่สนับสนุนได้ขึ้นกำแพงนี้ พร้อมฝากลิงก์และข้อความถึงน้อง เรียงตามยอดสนับสนุน</p>
+        <ol class="wall-list" id="wall"></ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="wrap block faq">
+      <h2 class="reveal" data-t="q-h">คำถามที่พบบ่อย</h2>
+      <details class="reveal"><summary data-t="q1">ฟรีจริงไหม?</summary><p data-t="a1">ฟรีจริง ไม่มีฟีเจอร์ล็อก ไม่มีโฆษณา ไม่มี subscription ของแต่งทุกชิ้นใช้ได้ฟรี ถ้าชอบน้อง ช่วยเลี้ยงขนมได้ที่ข้างบน</p></details>
+      <details class="reveal"><summary data-t="q2">น้องรู้ไหมว่าฉันพิมพ์อะไร?</summary><p data-t="a2">ไม่รู้ น้องอ่านแค่ตัวนับของระบบว่ากดแป้นไปกี่ครั้งแล้ว (วิธีเดียวกับที่ Chrome ใช้) ไม่เห็นว่ากดตัวไหน และไม่ต้องขอสิทธิ์อะไรเพิ่ม</p></details>
+      <details class="reveal"><summary data-t="q3">ใช้ในที่ทำงานได้ไหม?</summary><p data-t="a3">ได้ ไม่มีบัญชี ไม่ต่อเน็ต (นอกจากเช็กอัปเดต) ไม่ส่งข้อมูลไปไหน ไม่ขอไมค์ ไม่ขอกล้อง</p></details>
+      <details class="reveal"><summary data-t="q4">กินเครื่องเยอะไหม?</summary><p data-t="a4">ราว 6–7% ของหนึ่งคอร์ระหว่างลอยอยู่บนเมฆ วัดบน MacBook Air M3 และไม่กินเลยตอนให้น้องกลับบ้าน</p></details>
+      <details class="reveal"><summary data-t="q5">ปรับขนาด หรือย้ายไปจออื่นได้ไหม?</summary><p data-t="a5">ได้ มีสามขนาดในตั้งค่า และลากน้องไปปล่อยบนจอไหน น้องก็จะอยู่จอนั้น</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="sprite-el" data-char="piko" data-pose="wave" data-size="2"></span>
+      <p><span data-t="credit">ตัวละครทั้งหมดวาดโดยโปรเจกต์ Piko</span> · <span data-t="font">ฟอนต์</span> Pixelify Sans (OFL) · Mali — Cadson Demak (OFL)</p>
+      <p>Piko · <a href="https://github.com/sitta07/piko-releases">Downloads</a></p>
+    </div>
+  </footer>
+
+  <!-- Piko walks along the bottom of the page as you scroll -->
+  <div class="runner" aria-hidden="true"><span class="sprite-el" id="runner" data-char="piko" data-pose="sit" data-size="2"></span></div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>

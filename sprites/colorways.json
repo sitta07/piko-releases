@@ -1,0 +1,42 @@
+{
+  "colorways": [
+    {
+      "name": "ครีม",
+      "fur": "#fff4e4"
+    },
+    {
+      "name": "ส้ม",
+      "fur": "#f6aa62"
+    },
+    {
+      "name": "เทา",
+      "fur": "#babecc"
+    },
+    {
+      "name": "ดำ",
+      "fur": "#4e4854"
+    },
+    {
+      "name": "ชมพู",
+      "fur": "#ffcede"
+    },
+    {
+      "name": "มินต์",
+      "fur": "#c4ecd6"
+    },
+    {
+      "name": "ลาเวนเดอร์",
+      "fur": "#d6ccff"
+    },
+    {
+      "name": "วัวลาย",
+      "fur": "#fffcf8"
+    }
+  ],
+  "scarves": [
+    "#8c7cf5",
+    "#ff7a6b",
+    "#40b37a",
+    "#5aaaff"
+  ]
+}

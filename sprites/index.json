@@ -1,0 +1,464 @@
+{
+ "axolotl": {
+  "name": "Lotl",
+  "nameTh": "ลอตล์",
+  "species": "axolotl",
+  "speciesTh": "แอกโซลอเติล",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#ffc0d6",
+   "shade": "#e0a8bc",
+   "light": "#ffe5ee",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "bear": {
+  "name": "Nui",
+  "nameTh": "เนยนุ่ม",
+  "species": "bear",
+  "speciesTh": "หมี",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#d6a06c",
+   "shade": "#bc8c5f",
+   "light": "#eed9c4",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "beecat": {
+  "name": "Bumble",
+  "nameTh": "ผึ้งน้อย",
+  "species": "bee cat",
+  "speciesTh": "แมวผึ้ง",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#ffd650",
+   "shade": "#e0bc46",
+   "light": "#ffeeb9",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "bunny": {
+  "name": "Bun",
+  "nameTh": "บุ๋น",
+  "species": "bunny",
+  "speciesTh": "กระต่าย",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#fffafa",
+   "shade": "#e0dcdc",
+   "light": "#fffdfd",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "capy": {
+  "name": "Kapi",
+  "nameTh": "คาปิ",
+  "species": "capybara",
+  "speciesTh": "คาปิบาร่า",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#b08056",
+   "shade": "#9a704b",
+   "light": "#dfccbb",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "duck": {
+  "name": "Ducky",
+  "nameTh": "ดั๊กกี้",
+  "species": "rubber duck",
+  "speciesTh": "เป็ดยาง",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#ffdc46",
+   "shade": "#e0c13d",
+   "light": "#fff1b5",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "frog": {
+  "name": "Ribbi",
+  "nameTh": "ริบบิ",
+  "species": "frog",
+  "speciesTh": "กบ",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#8cce78",
+   "shade": "#7bb569",
+   "light": "#d1ebc9",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "ghost": {
+  "name": "Puff",
+  "nameTh": "ปุย",
+  "species": "little ghost",
+  "speciesTh": "ผีน้อย",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#f6f6ff",
+   "shade": "#d8d8e0",
+   "light": "#fbfbff",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "hamster": {
+  "name": "Tua",
+  "nameTh": "ถั่ว",
+  "species": "hamster",
+  "speciesTh": "แฮมสเตอร์",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#ecbe8c",
+   "shade": "#cfa77b",
+   "light": "#f7e5d1",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "hippo": {
+  "name": "Mumu",
+  "nameTh": "หมูหมู",
+  "species": "pygmy hippo",
+  "speciesTh": "ฮิปโปแคระ",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#baaac4",
+   "shade": "#a395ac",
+   "light": "#e3dde7",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "panda": {
+  "name": "Panpan",
+  "nameTh": "แพนแพน",
+  "species": "panda",
+  "speciesTh": "แพนด้า",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#fafafa",
+   "shade": "#dcdcdc",
+   "light": "#fdfdfd",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "penguin": {
+  "name": "Pengu",
+  "nameTh": "เพนกุ",
+  "species": "penguin",
+  "speciesTh": "เพนกวิน",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#464e68",
+   "shade": "#3d445b",
+   "light": "#b5b8c2",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "piko": {
+  "name": "Piko",
+  "nameTh": "พิโกะ",
+  "species": "cat",
+  "speciesTh": "แมว",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "run": 4,
+   "sit": 4,
+   "happy": 4,
+   "wave": 4,
+   "lie": 4,
+   "type": 4,
+   "work": 4,
+   "workGlasses": 4,
+   "drink": 4,
+   "drinkGlasses": 4,
+   "read": 4,
+   "stretch": 4,
+   "fall": 2,
+   "think": 4,
+   "angry": 4,
+   "sad": 4,
+   "cheer": 4,
+   "shy": 4,
+   "note": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "run": 12,
+   "sit": 3,
+   "happy": 8,
+   "wave": 6,
+   "lie": 2,
+   "type": 8,
+   "work": 8,
+   "workGlasses": 8,
+   "drink": 3,
+   "drinkGlasses": 3,
+   "read": 2,
+   "stretch": 3,
+   "fall": 10,
+   "think": 3,
+   "angry": 8,
+   "sad": 2,
+   "cheer": 8,
+   "shy": 4,
+   "note": 3,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#fff4e4",
+   "shade": "#e0d6c8",
+   "light": "#fffaf4",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {
+   "beanie": "หมวกไหมพรม",
+   "bow": "โบว์",
+   "flower_crown": "มงกุฎดอกไม้",
+   "headphones": "หูฟัง",
+   "party_hat": "หมวกปาร์ตี้",
+   "glasses": "แว่น",
+   "thai_garland": "พวงมาลัย"
+  }
+ },
+ "redpanda": {
+  "name": "Tama",
+  "nameTh": "ทามะ",
+  "species": "red panda",
+  "speciesTh": "แพนด้าแดง",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#e2703c",
+   "shade": "#c66234",
+   "light": "#f3c5b1",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ },
+ "shiba": {
+  "name": "Moji",
+  "nameTh": "โมจิ",
+  "species": "shiba",
+  "speciesTh": "ชิบะ",
+  "frames": {
+   "idle": 4,
+   "walk": 4,
+   "happy": 4,
+   "cheer": 4,
+   "dance": 4
+  },
+  "fps": {
+   "idle": 4,
+   "walk": 8,
+   "happy": 8,
+   "cheer": 8,
+   "dance": 6
+  },
+  "colors": {
+   "fur": "#f0a85c",
+   "shade": "#d39350",
+   "light": "#f9dcbd",
+   "scarf": "#8c7cf5",
+   "scarfShade": "#695db7"
+  },
+  "accessories": {}
+ }
+}
