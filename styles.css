@@ -173,6 +173,9 @@ h1 em { font-style: normal; color: var(--lavender); }
   animation: breathe 2s steps(4) infinite, bob 3.2s ease-in-out infinite alternate;
 }
 @keyframes breathe { to { background-position-x: 133.333%; } }
+/* facing left: pet and cloud mirrored; the character sits off its frame's middle, so the pet moves over */
+.ride.facing-left .hero-pet { left: 0; transform: scaleX(-1); }
+.ride.facing-left .ride-cloud { transform: scaleX(-1); }
 @keyframes bob { to { translate: 0 -6px; } }
 @media (prefers-reduced-motion: reduce) { .ride .hero-pet, .ride-cloud { animation: none; } }
 /* what you type on the page shows up in the little window */

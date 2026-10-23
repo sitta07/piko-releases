@@ -159,6 +159,8 @@ const hero = (() => {
 
   function place() {
     ride.style.transform = `translate(${x}px, ${-y}px)`;
+    // on the right half it looks in towards the middle, the cloud's tail trailing behind
+    ride.classList.toggle("facing-left", x + RW / 2 > width() / 2);
     bubble.style.left = `${Math.max(6, Math.min(width() - bubble.offsetWidth - 6, x + RW / 2 - 12 - bubble.offsetWidth / 2))}px`;
     bubble.style.bottom = `${FLOOR + y + RH + 6}px`;
   }
